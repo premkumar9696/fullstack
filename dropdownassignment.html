@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+      .maindiv {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .middlediv,
+      .lastdiv {
+        display: flex;
+        margin: 13px 10px;
+      }
+      .middlediv>li,
+      .lastdiv>li {
+        margin: 0px 25px;
+        font-family: Roboto;
+      }
+
+      .insidedropdown {
+        display: none;
+        position: absolute;
+        color: black;
+        background-color: white;
+        border:1px solid lightgrey;
+        color:grey;
+        margin-top:5px;
+      }
+      .insidedropdown li {
+        padding: 15px;
+      }
+      .insidedropdown li:hover {
+        background-color:lightgrey;
+      }
+      .pestdropdown {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -3px;
+        width: 250px;
+        background-color: white;
+        border:1px solid lightgrey;
+        color:grey;
+      }
+      .dropdownelement:hover .insidedropdown {
+        display: block;
+      }
+      .seconddropdown {
+        position: relative;
+        width:200px;
+      }
+      .seconddropdown:hover .pestdropdown {
+        display: block;
+      }
+      .lastdiv li button{
+        padding:10px;
+        background-color: rgb(0, 216, 0);
+        color:white;
+        border:none;
+        font-weight: bold;
+      }
+      .middlediv>li{
+        position:relative;
+      }
+      .middlediv > li::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 10px; 
+                    left: 0;
+                    width: 0; 
+                    height: 2px; 
+                    background-color: black; 
+                    }
+
+     .middlediv > li:hover::after {
+                    width: 100%; 
+                    }
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="maindiv">
+        <li><img src="./images/Capture3.PNG" /></li>
+        <div class="middlediv">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Bussiness</li>
+          <li class="dropdownelement">
+            Services
+            <ul class="insidedropdown">
+              <li class="seconddropdown">
+                pest control
+                <ul class="pestdropdown">
+                  <li>bedbug control</li>
+                  <li>cockroach control</li>
+                  <li>mosquito control</li>
+                  <li>rodent control</li>
+                  <li>termite control</li>
+                  <li>wood borer control</li>
+                </ul>
+              </li>
+              <li href="">bird netting</li>
+            </ul>
+          </li>
+          <li>products</li>
+          <li>Offers</li>
+        </div>
+        <div class="lastdiv">
+          <li><button>sign in</button></li>
+          <li>cart</li>
+        </div>
+      </ul>
+    </nav>
+  </body>
+</html>

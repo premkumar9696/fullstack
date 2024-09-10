@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            padding: 20px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            width: 200px;
+        }
+
+        #child {
+            display: block;
+            padding: 10px;
+            background-color: lightgreen;
+            border: 2px solid green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        Parent Div
+        <span id="child">Child Span</span>
+    </div>
+    
+
+
+
+<script defer>
+        document.getElementById('parent').addEventListener('mouseover', () => {
+            console.log('Mouse over parent or its child');
+        });
+
+        document.getElementById('parent').addEventListener('mouseenter', () => {
+            console.log('Mouse entered parent');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: Roboto;
+        }
+        .maindiv{
+            display:flex;
+            border:1px solid grey;
+            padding:10px;
+            background-color: white !important;
+            
+        }
+        .maindiv>li{
+            list-style: none;
+            margin: 10px 20px;
+            font-weight: bold;
+            position:relative;
+        }
+        li span {
+            color:red;
+            position:relative;
+            top:-6px;  
+            font-size: 10px;
+        }
+        .insidediv{
+            display:none;
+            position:absolute;
+            top:50px;
+            left:0px;
+            width:1200px;
+            height:500px;
+            background-color: white;
+        }
+        .dropdiv:hover .insidediv{
+            display:block;
+        }
+        .maindiv>li::after{
+            content:"";
+            position:absolute;
+            bottom:1px;
+            left:0px;
+            width:0;
+            height:2px;
+            background-color: rgb(240, 62, 92);
+        }
+        .maindiv>li:hover::after{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="maindiv">
+          <img src="./images/Capture.PNG" />
+            <li class="dropdiv">Men
+                <div  class="insidediv">
+
+                </div>
+            </li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Home & Living</li>
+            <li>Beauty</li>
+            <li>Studio <span>New</span></li>
+        </ul>
+      </nav>
+</body>
+</html>

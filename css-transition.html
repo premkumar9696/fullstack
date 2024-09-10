@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            background-color: green;
+            color:white;
+
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        button{
+            border:none;
+            color:red;
+            padding:15px;
+            font-weight:bold;
+            transition:all 5s ease-in ;
+            transition-delay: 2s; 
+            font-size:40px;
+        }
+        .rotate{
+            transform-origin:0% 100%;
+            
+            transition: all 5s;
+        } 
+        .rotate:hover{
+            transform:rotate(180deg);
+        }
+        div{
+            perspective: 2000px;
+        }
+        .rotate1{
+            transition: all 2s;
+        }
+        .rotate1:hover{
+            /* transform:translateZ(400px); */
+            transform:rotateY(40deg);
+        }
+    </style>
+</head>
+<body>
+    <button>Transition</button>
+    <!-- <div style='text-align: center;margin-top:200px;'>
+        <img class="rotate" src="./images/download.jpeg" width="100px" height="100px"> 
+    </div> -->
+    <div style='text-align: center;'>
+        <img class="rotate1" src="./images/download.jpeg" width="100px" height="100px"> 
+    </div>
+    <!-- <img src="./images/download.jpeg" width="100px" height="100px"> -->
+<!-- 
+    /*
+    ease start slow then go fast then finishes slow
+    ease-in  starts slow ends faster before end
+    ease-out starts fast slows before end 
+    linear same rate of change
+    ease-in-out starts slow ends slow middles fast
+    */
+    transition-delay:
+ -->
+
+
+
+
+
+
+    <script defer>
+
+    </script>
+</body>
+</html>
