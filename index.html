@@ -1,37 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eductional purpose</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   
-    <style>
-        /* div{
-            height:100vh;
-        } */
-    </style>
-</head>
-<body>
-    <div class="bg-[rgb(14,14,14)] h-screen px-[150px] font-sans">
-        
-            <nav>
-                <ul class="flex list-none pt-[15px]">
-                    <li class="flex"><img class="mr-[10px]" src="./images/vscodeicon.PNG"><span class="text-white font-extrabold text-lg ">Visual Studio Code</span></li>
-                    <div class="text-[rgb(155,163,180)] flex ml-[30px]">
-                    <li class="mr-[20px] ml-[20px] font-bold">Docs</li>
-                    <li class="mr-[20px] font-bold">Updates</li>
-                    <li class="mr-[20px] font-bold">Blog</li>
-                    <li class="mr-[20px] font-bold">Api</li>
-                    <li class="mr-[20px] font-bold">Extensions</li>
-                    <li class="mr-[20px] font-bold">FAQ</li>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="px-[100px] h-[120vh] bg-[rgb(14,14,14)] font-sans">
+      <nav class="pt-[15px]">
+        <ul class="flex justify-between list-none">
+          <div class="text-[rgb(155,163,180)] flex mt-[5px]">
+            <li class="flex">
+              <img class="mr-[10px]" src="./images/vscodeicon.PNG" /><span
+                class="text-white inline-block w-[200px] font-extrabold text-lg"
+                >Visual Studio Code</span
+              >
+            </li>
+
+            <li class="mr-[20px] ml-[20px] font-bold">Docs</li>
+            <li class="mr-[20px] font-bold">Updates</li>
+            <li class="mr-[20px] font-bold">Blog</li>
+            <li class="mr-[20px] font-bold">Api</li>
+            <li class="mr-[20px] font-bold">Extensions</li>
+            <li class="mr-[20px] font-bold">FAQ</li>
+          </div>
+          <div class="flex">
+            <li
+              class="w-[250px] flex items-center text-[gray] border-gray outline-none border-solid border-2 border-gray-500"
+            >
+              <i class="fa-solid fa-magnifying-glass inline-block mx-[10px]"></i
+              ><input
+                class="border-none bg-transparent"
+                placeholder="Search Docs"
+                type="search"
+              />
+            </li>
+            <li class="ml-[10px]">
+              <button
+                class="bg-[blue] p-[10px] w-[150px] hover:bg-[rgb(0,120,212)] font-bold text-white rounded"
+              >
+                Download
+              </button>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <section class="mt-[100px]">
+        <div class="grid grid-cols-[4fr_8fr]">
+          <div>
+            <p
+              class="text-white py-[4px] px-[20px] bg-gray-700 inline-block rounded-full"
+            >
+              Free. built on open source. Runs everywhere
+            </p>
+            <h1 class="text-white text-[60px] font-bold mt-[30px]">Code</h1>
+            <h1 class="text-white text-[60px] font-bold">Editing.</h1>
+            <h1 class="text-white text-[60px] mb-[30px] font-bold">
+              Redefined.
+            </h1>
+            <button
+              class="bg-[blue] px[5px] py-[12px] w-[150px] hover:bg-[rgb(0,120,212)] text-white rounded"
+            >
+              <span class="font-bold text-white"
+                ><i class="fa-solid fa-download"></i> &nbsp;&nbsp;.deb</span
+              >
+              <p>Debian, Ubuntu...</p>
+            </button>
+            <button
+              class="bg-[blue] px[5px] py-[12px] w-[150px] hover:bg-[rgb(0,120,212)] text-white rounded"
+            >
+              <span class="font-bold text-white"
+                ><i class="fa-solid fa-download"></i> &nbsp;&nbsp;.rpm</span
+              >
+              <p>Red Hat, Fedora...</p>
+            </button>
+            <div class="mt-[20px]">
+              <a class="underline text-[blue]" href="">Web</a>,
+              <a class="underline text-[blue]">Insiders edition</a
+              ><span class="text-white"> ,or</span>
+              <a class="underline text-[blue]">other platforms</a>
+            </div>
+            <div class="text-white hello">
+              By using, you agree to its
+              <span class="text-[blue]">license</span> and
+              <span class="text-[blue]">privacy statement</span>.
+            </div>
+          </div>
+          <div class="border-gray border-1 rounded">
+            <img class="w-fit h-[550px] ml-[80px]" src="./images/editorimage.JPG" />
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="h-[50vh] bg-[black] px-[100px]">
+      <div class="grid grid-cols-[4fr_8fr]">
+        <div class="">
+          <h1 class="text-white text-[37px] font-bold mt-[50px] mb-[10px]">
+            Code in any language
+          </h1>
+          <p class="text-white text-justify text-[20px]">
+            VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+          </p>
+        </div>
+        <div class="ml-[80px] mt-[50px]">
+            <img class="w-[850px] h-[200px] rounded" src="./images/languages.JPG" />
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="h-[100vh] bg-[black] px-[100px]">
+        <div class="grid grid-cols-[4fr_8fr]">
+          <div class="">
+            <h1 class="text-white text-[37px] font-bold mt-[50px] mb-[10px]">
+              Code with extensions
+            </h1>
+            <p class="text-white text-justify text-[20px]">
+                Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.
+            </p>
+            <p class="text-[blue] underline mt-[5px] text-[20px]">Learn more about extensions</p>
+          </div>
+          <div class="ml-[80px] mt-[50px]">
+              <div class="grid grid-cols-3 grid-rows-3 gap-[10px]">
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/python.JPG">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">Python</h3>
+                        <p class="text-[grey] mt-[3px]">Adds rich language support for Python</p>
                     </div>
-                    <li class="ml-[50px]"><input class="bg-transparent border-solid border-2 border-gray-500 px-[5px]" placeholder="Search docs" type="search"></li>
-                    <li class="ml-[30px]"><button class="bg-[rgb(0,120,212)] p-[4px] w-[100px] font-bold text-white">Download</button></li>
-                </ul>
-            </nav>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/python.JPG">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">GitHub Copilot</h3>
+                        <p class="text-[grey] mt-[3px]">your Ai pair programmer</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/c++.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">C/C++</h3>
+                        <p class="text-[grey] mt-[3px]">Adds rich language support for c/c++</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/jupyter.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">Jupyter</h3>
+                        <p class="text-[grey] mt-[3px]">Language support for jupyter notebooks</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/gitlens.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">GitLens</h3>
+                        <p class="text-[grey] mt-[3px]">Supercharge your Git experience</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/csharp.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">C# Dev Kit</h3>
+                        <p class="text-[grey] mt-[3px]">Powerful tools for your C# environment</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/github2.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">GitHub Codespaces</h3>
+                        <p class="text-[grey] mt-[3px]">Adds rich language support for Python</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/github3.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">GitHub Pull Requests</h3>
+                        <p class="text-[grey] mt-[3px]">Adds rich language support for Python</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[rgb(22,22,22)] rounded p-[5px] border border-transparent hover:border-gray-500 transition duration-300" >
+                    <img class="h-[70px]" src="./images/code.jpg">
+                    <div class="text-white ml-[10px] mt-[5px]">
+                        <h3 class="text-[15px] font-bold">Remote Development</h3>
+                        <p class="text-[grey] mt-[3px]">Adds rich language support</p>
+                    </div>
+                </div>
+                
+
+              </div>
+          </div>
+        </div>
+      </section>
+<!-- part2 -->
+
+<section class="h-[110vh] bg-[black] px-[100px]">
+    <div class="grid grid-cols-[4fr_8fr]">
+      <div class="text-white">
+        <h1 class="text-white text-[37px] font-bold  mb-[10px]">Code with GitHub</h1>
+        <h1 class="text-white text-[37px] font-bold  mb-[10px]">Copilot</h1>
+        <p class="text-white text-justify text-[22px] mb-[10px]">Write code faster and smarter with GitHub Copilot, your AI pair programmer.</p>
+        <P class="text-[blue] underline text-justify text-[22px] mb-[10px]">Try GitHub Copilot free for 30 days</P>
+
+        <p class="text-white text-justify text-[22px] mb-[10px]"><span class="text-[blue] underline">Completions</span> present suggestions automatically to help you code more efficiently.</p>
+
+        <P class="text-white text-justify text-[22px] mb-[10px]"><span class="text-[blue] underline">Copilot Chat</span> understands the context of your code, workspace, extensions, settings, and more.</P>
+
+        <p class="text-white text-justify text-[22px] mb-[10px]"> <span class="text-[blue] underline">inline chat</span> enables you to iteratively generate edits and get answers to quick questions, directly on your code.</p>
         
-        
+
+
+
+
+      </div>
+      <div class="ml-[80px]">
+          <img class="w-[850px] h-[550px] rounded" src="./images/editortext1.JPG" />
+      </div>
     </div>
-</body>
+  </section>
+
+  <section class="h-[110vh] bg-[black] px-[100px]">
+    <div class="grid grid-cols-[4fr_8fr]">
+      <div class="text-white">
+        <h1 class="text-white text-[37px] font-bold  mb-[10px]">Code fully customized</h1>
+        <p class="text-white text-justify text-[22px] mb-[10px]">Customize your VS Code UI and layout so that it fits your coding style.</p>
+        <p class="text-white text-justify text-[22px] mb-[10px]"><span class="text-[blue] underline">Color themes</span> let you modify the colors in VS Code's user interface to suit your preferences and work environment.
+
+        </p>
+        <p class="text-white text-justify text-[22px] mb-[10px]"><span>Settings Sync</span> enables you to share your user settings across your VS Code instances with the Settings Sync feature.</p>
+
+        <p class="text-white text-justify text-[22px] mb-[10px]"><span class="text-[blue] underline">Profiles</span> let you create sets of customizations and quickly switch between them or share them with others.
+
+        </p>
+
+
+
+      </div>
+      <div class="ml-[80px] ">
+          <img class="w-[850px] h-[550px] rounded" src="./images/editortext2.JPG" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="h-[110vh] bg-[black] px-[100px]">
+    <div class="grid grid-cols-[4fr_8fr]">
+      <div class="text-white">
+       
+        <h1 class="text-white text-[37px] font-bold mb-[10px]">Code anywhere</h1>
+        <p class="text-white text-justify text-[22px] mb-[10px]">Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).</p>
+        <p class="text-white text-justify text-[22px] mb-[10px]"><span class="text-[blue] underline">Built-in Source Control</span> empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.</p>
+        <p class="text-white text-justify text-[22px] mb-[10px]"><span>GitHub Codespaces</span> provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</p>
+
+
+      </div>
+      <div class="ml-[80px]">
+          <img class="w-[850px] h-[550px] rounded" src="./images/editortext3.JPG" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="h-[40vh] bg-[black] px-[100px]">
+    <div class="text-center">
+        <h1 class="text-white text-[37px] font-bold mb-[10px]">Code with rich features</h1>
+        <P class="text-white text-center text-[20px] mb-[10px]">There's a lot more to an editor. Whether it's using built-in features or</P>
+        <p class="text-white text-center text-[22px] mb-[10px]">rich extensions, there's something for everyone.</p>
+
+
+    </div>
+    </section>
+
+
+    <section class="h-[80vh] bg-[black] px-[100px] text-white">
+        <div class="grid grid-cols-4 grid-rows-3 gap-[10px] ">
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg1.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Integrated terminal</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg2.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Run code</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg3.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Version control</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg4.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Build tasks</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+
+            </div>
+
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg5.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Local history</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg6.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Themes</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg7.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Accessibility</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+
+            <div class="p-[15px] bg-[rgb(22,22,22)] rounded border border-transparent hover:border-gray-500 transition duration-300">
+                <img class="my-[10px]" src="./images/gridimg8.jpg">
+                <h1 class="text-[15px] font-bold my-[10px]">Web support</h1>
+                <p class="text-[grey] my-[3px]">Use your favorite shell whether it's zsh,pwsh,or git bash,all inside the editor.</p>
+            </div>
+        </div>
+        </section>
+
+
+        <section>
+            <div class="px-[100px] h-[25vh] bg-[black] text-white flex justify-between">
+            <div>
+                <div class="flex my-[20px]">
+                    <div class="mr-[15px]"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="mr-[15px]"><i class="fa-brands fa-github"></i></div>
+                    <div class="mr-[15px]"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="flex my-[20px]">
+                    <div class="text-[15px] mr-[15px]">Support</div>
+                    <div class="text-[15px] mr-[15px]">Privacy</div>
+                    <div class="text-[15px] mr-[15px]">Terms of use</div>
+                    <div class="text-[15px] mr-[15px]">License</div>
+                </div>
+            </div>
+            <div class="grid grid-cols-[10px_10px] grid-rows-[10px_10px] gap-[2px]">
+                <div class="bg-white"></div>
+                <div class="bg-white"></div>
+                <div class="bg-white"></div>
+                <div class="bg-white"></div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+  </body>
 </html>
